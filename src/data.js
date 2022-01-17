@@ -98,4 +98,12 @@ export const books = [
     salePrice: 12.95,
     rating: 4.5,
   },
+  {
+    id: 13,
+    title: "Twelve and a Half",
+    url: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0626/9780062674685.jpg",
+    originalPrice: 29.50,
+    salePrice: 12.95,
+    rating: 5,
+  },
 ];
