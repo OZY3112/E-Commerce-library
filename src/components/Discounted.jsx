@@ -8,7 +8,7 @@ const Discounted = () => {
         <section id="recent">
             <div className="container">
                 <div className="row">
-                    <div className="section__title">Discounted <snap className="purple">Books</snap>.</div>
+                    <h2 className="section__title">Discounted <snap className="purple">Books</snap>.</h2>
                     <div className="books">
                         {
                         books

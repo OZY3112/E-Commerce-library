@@ -9,7 +9,7 @@ const Landing = () => {
                             <a href="#features"><button className="btn">Browse Books</button></a>
                         </div>
                         <figure className="header__img--wrapper">
-                        <svg width="638" height="637" viewBox="0 0 638 637" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="638" height="670" viewBox="0 0 638 620" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undrawn_Books 1" clip-path="url(#clip0_1_2)">
 <g id="leaf2">
 <path id="leaf2_2" d="M541.87 282.95C525.89 300.89 523.06 324.95 520.5 349.49C518.59 367.64 516.83 386.06 510 402.47C504.229 416.103 495.044 428.019 483.33 437.07C482.28 437.89 481.21 438.68 480.12 439.45H421.85C421.76 438.66 421.69 437.86 421.62 437.07C419.112 407.203 425.888 377.291 441.02 351.42C447.075 341.287 454.383 331.957 462.77 323.65C471.86 339.52 483.08 354.86 483.08 354.86L478.01 310.38C496.748 296.177 518.669 286.761 541.87 282.95Z" fill="#F2F2F2"/>

@@ -376,7 +376,7 @@ FEATURES
 
 .book {
   width: 25%;
-  padding: 24px;
+  padding: 32px;
   transition: all 300ms ease;
 }
 
@@ -869,23 +869,34 @@ animations
 */
 
 
+
 #upload{
-  animation:500ms bop alternate-reverse ease infinite;
+  animation:2s bop alternate-reverse ease infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 #head{
   transform-origin: bottom;
   transform-box:fill-box ;
-  animation:500ms nod alternate-reverse ease infinite;
+  animation:1s nod alternate-reverse ease-in-out infinite;
+}
+#paper{
+  animation: 2.5s nod2 alternate-reverse ease infinite 200ms;
+  transform-origin: bottom;
+  transform-box: bottom;
+}
+#left-leg{
+  animation:2s left-leg alternate-reverse ease-in-out infinite ;
+  transform-origin: top;
+  transform-box: fill-box;
 }
 
 @keyframes bop{
   0%{
-    transform: translateY(3px) scale(1);
+    transform: translateY(3px) ;
   }
   100%{
-    transform: translateY(-3px)scale(1.01);
+    transform: translateY(-3px);
   }
 }
 @keyframes nod{
@@ -894,5 +905,21 @@ animations
   }
   100%{
     transform: rotateZ(4deg);
+  }
+}
+@keyframes nod2{
+  0%{
+    transform: rotateZ(-1deg);
+  }
+  100%{
+    transform: rotateZ(1deg);
+  }
+}
+@keyframes left-leg{
+  0%{
+    transform: rotateZ(-6deg);
+  }
+  100%{
+    transform: rotateZ(2deg);
   }
 }
