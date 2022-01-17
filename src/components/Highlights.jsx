@@ -9,7 +9,7 @@ const Highlights = () => {
           <div className="container">
               <div className="row">
                   <h2 className="section__title">
-                      why choose <span className="puple">libabry</span>.
+                      why choose  <span className="purple"> libabry</span>.
                   </h2>
                   <div className="highlight__wrapper">
 

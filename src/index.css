@@ -862,3 +862,37 @@ animations
     transform: translateY(-3px);
   }
 }
+/*
+
+animations
+
+*/
+
+
+#upload{
+  animation:500ms bop alternate-reverse ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#head{
+  transform-origin: bottom;
+  transform-box:fill-box ;
+  animation:500ms nod alternate-reverse ease infinite;
+}
+
+@keyframes bop{
+  0%{
+    transform: translateY(3px) scale(1);
+  }
+  100%{
+    transform: translateY(-3px)scale(1.01);
+  }
+}
+@keyframes nod{
+  0%{
+    transform: rotateZ(-4deg);
+  }
+  100%{
+    transform: rotateZ(4deg);
+  }
+}

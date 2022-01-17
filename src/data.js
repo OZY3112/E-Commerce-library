@@ -8,7 +8,7 @@ export const books = [
     url: "https://covers.openlibrary.org/b/id/8091016-L.jpg",
     originalPrice: 49.95,
     salePrice: 14.95,
-    rating: 4.5,
+    rating: 3.5,
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ export const books = [
     url: "https://covers.openlibrary.org/b/id/2380224-L.jpg",
     originalPrice: 11,
     salePrice: 10,
-    rating: 4,
+    rating: 2.5,
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ export const books = [
     url: "https://covers.openlibrary.org/b/id/8906626-L.jpg",
     originalPrice: 35,
     salePrice: 19.95,
-    rating: 4.5,
+    rating: 3.5,
   },
   {
     id: 10,
@@ -103,7 +103,7 @@ export const books = [
     title: "Twelve and a Half",
     url: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0626/9780062674685.jpg",
     originalPrice: 29.50,
-    salePrice: 12.95,
+    salePrice: null,
     rating: 5,
   },
 ];

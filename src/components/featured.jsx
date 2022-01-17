@@ -5,17 +5,19 @@ const Featured = () => {
 
     console.log(books)
 
-    function get5starbooks() {
-        books.filter(book => book.rating === 5)
-    }
-
     return ( 
        <section id="features">
            <div className="container">
                <div className="row">
-                   <h2 className="section__title">Featured <span className="puple">Books</span>.</h2>
+                   <h2 className="section__title">Featured <span className="purple">Books</span>.</h2>
                    <div className="books">
-                       <Book/>
+
+                       {
+                       books.filter(book => book.rating === 5)
+                       .slice(3,7)
+                       .map((book) => (<Book book={book} key={book.id}/>))
+                       }
+
                    </div>
                </div>
            </div>
