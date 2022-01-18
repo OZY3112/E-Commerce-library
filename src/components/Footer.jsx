@@ -1,4 +1,4 @@
-import logo from '../assets/Library'
+import Logo from '../assets/Library.svg'
 
 const Footer = () => {
     return ( 
@@ -7,9 +7,13 @@ const Footer = () => {
                 <div className="row row__column">
                     <a href="/">
                         <figure className="fooer__logo">
-                            <img src={logo} className="footer__img--img" alt="" />
+                            <img src={Logo} className="footer__logo--img" alt="" />
                         </figure>
                     </a>
+                    <div className="footer__list">
+                        <a href="/" className='footer__link'>Home</a>
+                        <span href="/" className='footer__link no-cursor'>About</span>
+                    </div>
                 </div>
             </div>
         </footer>

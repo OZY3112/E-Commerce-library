@@ -370,7 +370,7 @@ FEATURES
 .books {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -24px;
+  margin: 0 ;
   
 }
 
@@ -871,7 +871,7 @@ animations
 
 
 #upload{
-  animation:2s bop alternate-reverse ease infinite;
+  animation:2s op alternate-reverse ease infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
