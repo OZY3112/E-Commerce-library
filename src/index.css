@@ -265,7 +265,9 @@ header {
 
 .books__container {
   padding: 24px 0;
-  
+  margin: 0 auto;
+  width: 80%;
+ 
 }
 
 .row {
@@ -516,6 +518,7 @@ BOOKS PAGE
 #books__main {
   flex: 1;
   background-color: rgb(248,249,250);
+  position: relative;
 }
 
 .books__header {
@@ -922,4 +925,33 @@ animations
   100%{
     transform: rotateZ(2deg);
   }
+}
+/*
+
+additions 
+
+*/
+
+.book__rows {
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  
+}
+.right{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+ 
+}
+.book__seletected--title--top{
+  margin-top:2rem;
+  margin-left:.25rem;
+  text-decoration: none;
 }
