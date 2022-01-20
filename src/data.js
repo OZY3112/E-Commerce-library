@@ -106,4 +106,28 @@ export const books = [
     salePrice: null,
     rating: 5,
   },
+  {
+    id: 14,
+    title: "Greatness Is Upon You",
+    url: "https://rares.images.hpb.com/10377437/1/large.jpg",
+    originalPrice: 49.50,
+    salePrice: null,
+    rating: 5,
+  },
+  {
+    id: 15,
+    title: "Crushing It!",
+    url: "https://images-na.ssl-images-amazon.com/images/I/51SxLaKwSaL._SX329_BO1,204,203,200_.jpg",
+    originalPrice: 40.0,
+    salePrice: 39.99,
+    rating: 4.5,
+  },
+  {
+    id: 16,
+    title: "The subtle Art of Not  Giving    A Fuck",
+    url: "https://www.brit.co/media-library/image.jpg?id=26117338&width=704&quality=80",
+    originalPrice: 40.0,
+    salePrice: 39.99,
+    rating: 4.5,
+  },
 ];

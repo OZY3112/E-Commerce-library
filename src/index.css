@@ -435,6 +435,10 @@ FEATURES
   font-size: 20px;
   margin-bottom: 8px;
   display: flex;justify-content: center;
+  max-width: 150px;
+  align-items: center;
+ margin: 0 auto;
+ text-align: center;
 }
 
 .book__title--link {
@@ -883,10 +887,10 @@ animations
   transform-box:fill-box ;
   animation:1s nod alternate-reverse ease-in-out infinite;
 }
-#paper{
+#manpaper{
   animation: 2.5s nod2 alternate-reverse ease infinite 200ms;
   transform-origin: bottom;
-  transform-box: bottom;
+   
 }
 #left-leg{
   animation:2s left-leg alternate-reverse ease-in-out infinite ;
