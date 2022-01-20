@@ -27,7 +27,6 @@ function App() {
       <Route path="/books" render={() => <Books books={books}/>} exact/>
       <Route path="/books/:id" render={() => <BookInfo books={books}/>} addToCart={addToCart} exact/>
       <Route path="/cart" render={() => <Cart books={books}/>} exact/>
-
       <Footer/>
     </div>
     </Router>
