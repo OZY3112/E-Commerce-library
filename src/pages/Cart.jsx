@@ -1,5 +1,5 @@
 
-const Cart = () => {
+const Cart = ({cart, changequantity}) => {
     return ( 
         <div id="books__body">
             <main id="books__main">
@@ -15,24 +15,33 @@ const Cart = () => {
                                 <span className="cart__total">Price</span>
                             </div>
                             <div className="cart__body">
-                                <div className="cart__item">
+                                {
+                                    cart.map(book => {
+                                        return(
+                                             <div className="cart__item">
                                     <div className="cart__book">
-                                        <img src="https://covers.openlibrary.org/b/id/8479576-L.jpg"className="cart__book--img" alt="" />
+                                        <img src={book.url} className="cart__book--img" alt="" />
                                         <div className="cart__book--info">
                                             <span className="cart__book--title">
-                                                title
+                                                {book.title}
                                             </span>
                                             <span className="cart__book--price">
-                                               $30
+                                               ${(book.salePrice || book.originalPrice).toFixed(2)}
                                             </span>
                                              <button className="cart__book--remove">Remove</button>
                                         </div>
                                     </div>
                                     <div className="cart__quantity">
-                                        <input type="number"min={0} defaultValue={1} max={30} className="cart__input"/>
+                                        <input type="number"min={0} defaultValue={1} max={30} className="cart__input" value={book.quantity}
+                                        onChange={(e) => changequantity(book, e.target.value)} />
                                     </div>
                                     <div className="cart__total">100$</div>
                                 </div>
+                                        )
+                                    })
+                                }
+
+                               
                             </div>
                         </div>
                         <div className="total">
@@ -48,7 +57,7 @@ const Cart = () => {
                                 <span>Total</span>
                                 <span>$9.38</span>
                             </div>
-                            <button className="btn btn__checkout no-cusor" onClick={() => alert(`sorry, wasn,t skilled enought to that :(`)}>Procced to checkout</button>
+                            <button className="btn btn__checkout no-cusor" onClick={() => alert(`sorry, wasn,t skilled enought for that :(`)}>Procced to checkout</button>
                         </div>
                     </div>
                 </div>

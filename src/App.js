@@ -7,16 +7,24 @@ import Books from "./pages/Books";
 import { books } from "./data";
 import BookInfo from "./pages/BookInfo";
 import Cart from "./pages/Cart";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
 
   const [cart, setCart] = useState([])
 
   function addToCart(book) {
-    console.log("added to the cart!", book)
-    setCart([book])
+   setCart([...cart, {...book, quantity: 1}])
   } 
+
+  function changequantity(book, quantity) {
+    console.log(book, quantity)
+  }
+
+useEffect(() => {
+  console.log(cart)
+}, [cart])
+
 
   
   return (
@@ -25,8 +33,8 @@ function App() {
       <Nav/>
       <Route path="/" component={Home} exact/>
       <Route path="/books" render={() => <Books books={books}/>} exact/>
-      <Route path="/books/:id" render={() => <BookInfo books={books}/>} addToCart={addToCart} exact/>
-      <Route path="/cart" render={() => <Cart books={books}/>} exact/>
+      <Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} cart={cart}/>}  exact/>
+      <Route path="/cart" render={() => <Cart books={books} cart={cart} changequantity={changequantity} />} exact/>
       <Footer/>
     </div>
     </Router>

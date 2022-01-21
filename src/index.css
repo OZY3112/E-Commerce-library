@@ -326,6 +326,9 @@ HIGHLIGHTS
   flex-wrap: wrap;
   margin-bottom: 15rem  ;
 }
+.higlight__title{
+  margin-top: -7rem;
+}
 
 .highlight {
   padding: 0 24px;
