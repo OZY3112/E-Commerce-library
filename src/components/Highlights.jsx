@@ -15,7 +15,7 @@ const Highlights = () => {
           <div className="container">
               <div className="row">
                   <h2 className="section__title higlight__title">
-                      why choose  <span className="purple"> libabry</span>.
+                      why choose  <span className="purple"> library</span>.
                   </h2>
                   <div className="highlight__wrapper">
 
