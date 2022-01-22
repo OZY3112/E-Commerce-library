@@ -20,7 +20,7 @@ const Book = ({ book }) => {
             },[300])
         }
         return () => {
-            //unmount 
+            //unmount!
             mountref.current = false
         }
     })
