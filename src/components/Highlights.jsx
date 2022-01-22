@@ -33,7 +33,7 @@ const Highlights = () => {
                       para="Library has books in all your favourite categories."
                       />
 
-
+    
                       <Highlight 
                       icon={<FontAwesomeIcon icon="tags"/>} 
                       title="Affordable" 

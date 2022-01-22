@@ -24,7 +24,7 @@ const Books = ({books:initialbooks}) => {
         <div id="books__body">
             <main id="books__main">
                 <section>
-                    <div className="books__container">
+                    <div className="books__container ">
                         <div className="row book__rows">
                             <div className="books__header"><h2 className="section__title books__header--title">All Books</h2></div>
                             <select id="fliter" defaultValue="DEFAULT" onChange={(e)=> filterBooks(e.target.value)}>
