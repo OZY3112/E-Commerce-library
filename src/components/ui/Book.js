@@ -1,13 +1,36 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Price from "./Price";
 import Rating from "./Rating";
 
 const Book = ({ book }) => {
+
+    const [img, setimg] = useState()
+
+    const mountref = useRef(true)
+
+    useEffect(()=> {
+        const image = new Image()
+        image.src = book.url
+        image.onload = () => {
+            setTimeout(() => {
+                if(mountref.current){
+                    setimg(image)
+                }
+            },[300])
+        }
+        return () => {
+            //unmount 
+            mountref.current = false
+        }
+    })
+    
     return (
         <div className="book">
-            <Link to={`/books/${book.id}`}>
+            {
+                img ? <><Link to={`/books/${book.id}`}>
                 <figure className="book__img--wrapper">
-                    <img src={book.url} alt="" className="book__img" />
+                    <img src={img.src} alt="" className="book__img" />
                 </figure>
             </Link>
             <div className="book__title">
@@ -16,7 +39,15 @@ const Book = ({ book }) => {
                 </Link>
             </div>
             <Rating rating={book.rating}/>
-            <Price salePrice={book.salePrice} originalPrice={book.originalPrice}/>
+            <Price salePrice={book.salePrice} originalPrice={book.originalPrice}/></>
+            : 
+            <><div className="book__img--skeleton"></div>
+            <div className="skeleton book__title--skeleton"></div>
+            <div className="skeleton book__rating--skeleton"></div>
+            <div className="skeleton book__price--skeleton"></div></>
+            }
+            
+          
         </div>
     );
 }

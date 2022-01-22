@@ -29,19 +29,30 @@ function App() {
   }
 
 useEffect(() => {
-  console.log(cart)
 }, [cart])
+
+ 
+function removeitem(item) {
+  setCart(cart.filter(book => book.id !== item.id))
+}
+function numboitem(){
+  let counter = 0
+  cart.forEach(item => {
+    counter += +item.quantity
+  })
+  return counter
+}
 
 
   
   return (
     <Router>
     <div className="App">
-      <Nav/>
+      <Nav numboitem={numboitem()}/>
       <Route path="/" component={Home} exact/>
       <Route path="/books" render={() => <Books books={books}/>} exact/>
       <Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} cart={cart}/>}  exact/>
-      <Route path="/cart" render={() => <Cart books={books} cart={cart} changequantity={changequantity} />} exact/>
+      <Route path="/cart" render={() => <Cart books={books} cart={cart} changequantity={changequantity} removeitem={removeitem}/>} exact/>
       <Footer/>
     </div>
     </Router>

@@ -898,6 +898,20 @@ animations
   transform-origin: top;
   transform-box: fill-box;
 }
+#cart{
+  animation:cart 3s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes cart{
+  0%{
+    transform: translateX(60px) ;
+  }
+  100%{
+    transform: translateX(-60px);
+  }
+}
 
 @keyframes bop{
   0%{
@@ -955,6 +969,7 @@ additions
   overflow: hidden;
  
 }
+
 .book__seletected--title--top{
   margin-top:2rem;
   margin-left:.25rem;
