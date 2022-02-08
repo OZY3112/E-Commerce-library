@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const Landing = () => {
     return ( 
@@ -9,7 +9,7 @@ const Landing = () => {
                         <div className="header__description">
                             <h1>Egypt's most awarded online library</h1>
                             <h2>Find you dream book with <span className="purple">library</span> right now!</h2>
-                            <Link to="#features"><button className="btn">Browse Books</button></Link>
+                            <a href="#features"><button className="btn">Browse Books</button></a>
                         </div>
                         <figure className="header__img--wrapper">
                         <svg width="638" height="670" viewBox="0 0 638 620" className="mansvg" fill="none" xmlns="http://www.w3.org/2000/svg">

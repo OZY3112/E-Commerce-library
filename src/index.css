@@ -825,7 +825,7 @@ select {
 
 
 /* SMALL PHONES, LARGE SMARTPHONES */
-@media (max-width: 550px) {
+@media(max-width: 550px) {
   .btn__menu {
     display: block;
   }
