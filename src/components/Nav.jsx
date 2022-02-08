@@ -47,9 +47,9 @@ const Nav = ({numboitem}) => {
                         <FontAwesomeIcon icon="times" />
                     </button>
                     <ul className="menu__links">
-                        <li className="menu__list"><Link to="/" className="menu__link">Home</Link></li>
-                        <li className="menu__list"><Link to="/" className="menu__link">Books</Link></li>
-                        <li className="menu__list"><Link to="/" className="menu__link">Cart</Link></li>
+                        <li className="menu__list"><Link to="/home" className="menu__link">Home</Link></li>
+                        <li className="menu__list"><Link to="/books" className="menu__link">Books</Link></li>
+                        <li className="menu__list"><Link to="/cart" className="menu__link">Cart</Link></li>
                     </ul>
                 </div>
             </div>
