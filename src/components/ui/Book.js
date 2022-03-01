@@ -13,11 +13,9 @@ const Book = ({ book }) => {
         const image = new Image()
         image.src = book.url
         image.onload = () => {
-            setTimeout(() => { 
                 if(mountref.current){
                     setimg(image)
                 }
-            },[300])
         }
         return () => {
             //unmount!
